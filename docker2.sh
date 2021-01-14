@@ -23,7 +23,7 @@ sudo docker run --name pmat \
 	--network=network4 \
 	--restart=always \
 	-p 8048:80 \
-	--link mariadb:db \
+	--link mariadbt:db \
 	-d phpmyadmin:5.0.4 
 
 sudo docker run --name mongot \
